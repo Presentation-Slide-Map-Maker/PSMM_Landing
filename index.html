@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Slide Map Maker</title>
+    <meta name="description" content="Add navigation to your PowerPoint presentations. Generate Table of Contents with interactive slide thumbnails.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-gradient-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">
+                    <!-- User's Logo goes here -->
+                    <img src="assets/logo.png" alt="Лого">
+                </div>
+                <h1 class="nav-title">Presentation Slide Map Maker</h1>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/Presentation-Slide-Map-Maker" target="_blank" class="org-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Github Org</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Путешествуйте по презентации<br><span class="text-gradient">с картой слайдов</span></h2>
+            <p class="hero-subtitle">
+                Сервис, который автоматически создаёт слайд содержания с сеткой кликабельных миниатюр слайдов. Добавляет обратные ссылки с каждого слайда на содержание.
+            </p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">Перейти к продуктам</a>
+                <a href="#contact" class="btn btn-secondary">Контакты</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card mockup-card">
+                <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="mockup-body">
+                    <div class="toc-grid">
+                        <div class="toc-item">Слайд 1</div>
+                        <div class="toc-item">Слайд 2</div>
+                        <div class="toc-item">Слайд 3</div>
+                        <div class="toc-item">Слайд 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overall Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2 class="section-title">Возможности</h2>
+        </div>
+        <div class="features-grid">
+            
+            <!-- Feature 1 -->
+            <div class="feature-card glass-card reveal-on-scroll">
+                <i class="fa-solid fa-layer-group feature-icon"></i>
+                <h3 class="feature-title">Расположение карты слайдов</h3>
+                <p class="feature-desc">Автоматически расставляет миниатюры в сетку для оптимального использования места.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card glass-card reveal-on-scroll delay-1">
+                <i class="fa-solid fa-link feature-icon"></i>
+                <h3 class="feature-title">Перемещение по презентации</h3>
+                <p class="feature-desc">Создаёт гиперссылки в каждой миниатюре к нужному слайду.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card glass-card reveal-on-scroll delay-1">
+                <i class="fa-solid fa-arrow-rotate-left feature-icon"></i>
+                <h3 class="feature-title">Обратные ссылки</h3>
+                <p class="feature-desc">Добавляет обратные гиперссылки на содержание в формате [№ слайда]/[кол-во слайдов].</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-header">
+            <h2 class="section-title">Наши решения</h2>
+            <p class="section-description">Выберите подходящее решение для ваших нужд.</p>
+        </div>
+        <div class="products-grid">
+            
+            <!-- Product 1: Google Slides Apps Script -->
+            <div class="product-card glass-card reveal-on-scroll">
+                <div class="product-info">
+                    <div class="product-header">
+                        <a href="https://docs.google.com/presentation/d/13gEPjt04mvOWLPwIWLR3jrGLX4naIcH2Jv8xGiEAelM/edit?usp=sharing" target="_blank" class="product-link">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                        <h3 class="product-title">Расширение Google Slides</h3>
+                        <a href="https://github.com/Presentation-Slide-Map-Maker/Presentation-Slide-Map-Maker_GoogleSlidesApp" target="_blank" class="github-icon" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <p class="product-desc">
+                        Простое кроссплатформенное решение для презентаций Google Slides. Выберите слайды и создайте интерактивные карты за считанные секунды.
+                    </p>
+                    <div class="product-features">
+                        <span class="badge"><i class="fa-solid fa-cloud"></i> Cloud Native</span>
+                        <span class="badge"><i class="fa-solid fa-bolt"></i> Fast Generation</span>
+                    </div>
+                </div>
+                <div class="product-image">
+                    <img src="assets/slides-use-case.png" alt="десктоп" class="use-case-img zoomable">
+                </div>
+            </div>
+
+            <!-- Product 2: Desktop C# WPF -->
+            <div class="product-card glass-card reveal-on-scroll delay-1">
+                <div class="product-info">
+                    <div class="product-header">
+                        <a href="https://github.com/Presentation-Slide-Map-Maker/PptxSlideMapMaker_dotnet-framework/releases" target="_blank" class="product-link">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                        <h3 class="product-title">Настольное WPF приложение</h3>
+                        <a href="https://github.com/Presentation-Slide-Map-Maker/PptxSlideMapMaker_dotnet-framework" target="_blank" class="github-icon" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <p class="product-desc">
+                        C# WPF .NET Framework приложение для Windows. Для .pptx презентаций с возможностью предпросмотра слайда.
+                    </p>
+                    <div class="product-features">
+                        <span class="badge"><i class="fa-brands fa-windows"></i> Windows</span>
+                        <span class="badge"><i class="fa-solid fa-gear"></i> Advanced Control</span>
+                    </div>
+                </div>
+                <div class="product-image">
+                    <img src="assets/desktop-use-case.png" alt="десктоп" class="use-case-img zoomable">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="glass-card contact-card reveal-on-scroll">
+            <h2 class="section-title">Связаться с нами</h2>
+            <p class="contact-desc">Есть вопросы, обратная связь или хотите внести вклад?</p>
+            <div class="contact-links">
+                <div class="contact-item copy-email" id="emailCard" style="cursor: pointer; position: relative;">
+                    <div class="icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-info">
+                        <span class="contact-label">Почта (Нажмите, чтобы скопировать)</span>
+                        <span class="contact-value" id="emailAddress">vobannikov@edu.hse.ru</span>
+                    </div>
+                    <div class="copy-tooltip" id="copyTooltip">Скопировано!</div>
+                </div>
+                <a href="https://github.com/Art-Rock-Climber" target="_blank" class="contact-item">
+                    <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub профиль</span>
+                        <span class="contact-value">@Art-Rock-Climber</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Presentation Slide Map Maker. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
