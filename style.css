@@ -134,7 +134,7 @@ body {
 }
 
 .nav-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
@@ -149,7 +149,7 @@ body {
     border-radius: 8px;
     color: var(--text-main);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     transition: var(--transition);
 }
@@ -288,7 +288,7 @@ body {
     padding: 2rem 1rem;
     border-radius: 8px;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: var(--text-muted);
     transition: var(--transition);
 }
@@ -325,12 +325,12 @@ body {
 
 .feature-title {
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.rem;
 }
 
 .feature-desc {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Products Section */
@@ -416,7 +416,7 @@ body {
 }
 
 .product-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
@@ -429,9 +429,24 @@ body {
     color: var(--purple-light);
 }
 
+.product-link {
+    color: var(--text-muted);
+    font-size: 1.75rem;
+    transition: var(--transition);
+}
+
+.product-link:hover {
+    color: var(--purple-light);
+}
+
+.product-actions {
+    display: flex;
+    gap: .75rem;
+}
+
 .github-icon {
     color: var(--text-muted);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     transition: var(--transition);
 }
 
@@ -704,7 +719,7 @@ footer {
     }
     
     .nav-title {
-        display: none;
+        font-size: 1rem;
     }
     
     .contact-links {
@@ -806,6 +821,10 @@ body {
         padding: 3rem 1rem;
     }
 
+    .hero{
+        padding-top:7rem;
+    }
+
     .section-header {
         margin-bottom: 2rem;
     }
@@ -866,11 +885,6 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
-    }
-
-    .product-actions {
-        display: flex;
-        gap: .75rem;
     }
 
     .product-features {
