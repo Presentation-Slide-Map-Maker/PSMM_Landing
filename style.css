@@ -420,6 +420,15 @@ body {
     font-weight: 700;
 }
 
+.product-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-title-link:hover .product-title {
+    color: var(--purple-light);
+}
+
 .github-icon {
     color: var(--text-muted);
     font-size: 1.5rem;
@@ -701,4 +710,220 @@ footer {
     .contact-links {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+/* =========================================
+   Mobile Fixes
+   ========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Фикс декоративного фона */
+.bg-gradient-overlay {
+    inset: 0;
+    width: auto;
+    height: auto;
+}
+
+.glow-orb {
+    pointer-events: none;
+}
+
+/* =========================================
+   Планшеты
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero,
+    .features,
+    .products,
+    .contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .logo-placeholder {
+        height: 60px;
+    }
+
+    .hero {
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.2rem, 7vw, 3rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .mockup-card {
+        max-width: 100%;
+    }
+
+    .product-card {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .product-image {
+        min-height: auto;
+    }
+
+    .use-case-img {
+        max-height: 300px;
+    }
+
+    .contact-card {
+        padding: 2rem;
+    }
+
+}
+
+/* =========================================
+   Phones
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .hero,
+    .features,
+    .products,
+    .contact {
+        padding: 3rem 1rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Кнопки одна под другой */
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    /* Header */
+
+    .nav-container {
+        padding: .75rem 1rem;
+    }
+
+    .logo-placeholder {
+        height: 50px;
+    }
+
+    .org-card {
+        padding: .5rem .75rem;
+        font-size: .85rem;
+    }
+
+    /* Features */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Products */
+
+    .product-card {
+        padding: 1.25rem;
+        gap: 1.5rem;
+    }
+
+    .product-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .product-actions {
+        display: flex;
+        gap: .75rem;
+    }
+
+    .product-features {
+        gap: .4rem;
+    }
+
+    .badge {
+        font-size: .75rem;
+    }
+
+    .product-image {
+        min-height: auto;
+    }
+
+    .use-case-img {
+        max-height: 220px;
+    }
+
+    /* Contact */
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+        gap: .75rem;
+        align-items: flex-start;
+    }
+
+    .icon-wrapper {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .contact-info {
+        min-width: 0;
+    }
+
+    .contact-label {
+        font-size: .8rem;
+    }
+
+    .contact-value {
+        font-size: .95rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
 }
